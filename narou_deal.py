@@ -71,7 +71,7 @@ def iter_get(url):
 if __name__ == '__main__':
   db = plyvel.DB('./url_contents_pair.ldb', create_if_missing=True)
   tagger = MeCab.Tagger("-Owakati")
-  if '--getall' in sys.argv:
+  if '--step1' in sys.argv:
     urls = []
     with open("vars/narou.urls", "r") as f:
       for url in f:
@@ -83,6 +83,9 @@ if __name__ == '__main__':
         for (key, val) in pairs:
           db.put( key, val )
 
-  if '--plane' in sys.argv:
+  
+  if '--step2' in sys.argv:
+    m = MeCab.Tagger("-Owakati")
     for link, text in db:
-      print(text.decode('utf-8'))
+      for line in text.decode("utf-8").split("\n"):
+        print(m.parse(line).strip())
