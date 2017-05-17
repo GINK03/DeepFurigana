@@ -1,3 +1,6 @@
 *.ldb
 vars/narou.txt
 vars/output.zip
+url_contents_pair.ldb/*
+vars/*
+
