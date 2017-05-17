@@ -161,6 +161,5 @@ executor.py
 {edit some where}
 ```
 
-引数はありません
 ## fastTextでchargramを無効にして、分散表現の学習
 [1] [SeqGAN論文](https://arxiv.org/pdf/1609.05473.pdf?)
