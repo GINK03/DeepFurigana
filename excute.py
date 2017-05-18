@@ -38,7 +38,7 @@ def main():
         w = float(w.strip())
         ws.append(w)
 
-    sample = m.parse("大きな要因の一つにツイッターやフェイスブック、ブログの普及で、他者の私生活の情報が手に入りやすくなったことが挙げられるのではないでしょうか。以前よりも、他者と比べる材料がずっと増えたわけです。").strip()
+    sample = m.parse("　１５年３月以降、日本や欧米、豪州で発火事故が計１６件あったが、けが人はいないという。製造工程で異物が混入したことなどが原因としている。").strip()
 
     terms  = list( filter(lambda x:len(x) >= 4, map(lambda x:x.split("\t"), sample.split("\n") ) ) )
     while True:
@@ -77,6 +77,7 @@ def main():
           sampling.append( (last, res) )
       for last, res in sorted(sampling, key=lambda x:x[0]*-1):
         print(last, res)
+        print(last, res, file=sys.stderr)
         sample = m.parse(res.replace(" ", "")).strip()
         terms  = list( filter(lambda x:len(x) >= 4, map(lambda x:x.split("\t"), sample.split("\n") ) ) )
         break
