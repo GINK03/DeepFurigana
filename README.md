@@ -59,7 +59,7 @@ fastText
 ```
 パラメータ等
 ```cosole
-liblinear( logstic, L2-loss )
+liblinear( logistic, L2-loss )
 fastText( nchargram=disable, dimentions=256, epoch=5 )
 ```
 実行環境
@@ -116,8 +116,8 @@ Facebookがヴァイオレンス（暴力？）と近しいとか、まぁ、メ
 <div align="center"> 図5. イテレーション（単語の探索をする）ごとに、判別機をだんだん騙せるようになっている </div>
 
 ## まとめ
-おお、これが、DeepFuriganaかって感動するレベルのものではないですが、（そもそも一部のハンターハンターなどのDeepFuriganaは文脈すらも無視している）意味を維持しつつ、学習対象のラノベ等に近づけるという技も可能でした  
-  
+おお、これが、DeepFuriganaかって感動はちょっとずれた視点になりましたが、意味を維持しつつ、学習対象のラノベ等に近づけるという技も可能でした  
+  
 例えば、判別機をCharLevelCNNにしてみると、より人間書く小説に近い文体になるということがあるかもしれません  
   
 学習データの作品に強く影響を受ける、かつ、特定の作品の特定のシーンによることがあって、エッチな単語に言い換え続けてしまう方にだましに行ってしまうというのもありました  
@@ -129,7 +129,7 @@ https://github.com/GINK03/DeepFurigana
 ```
 前処理用のコード
 ```
-$ narou_deal.py
+$ python3 narou_deal.py
 ```
 
 引数説明
@@ -148,7 +148,7 @@ $ narou_deal.py
 
 DeepFuriganaを探索的に探していくプログラム
 ```console
-executor.py
+$ python3 executor.py
 ```
 
 ## データセット
@@ -156,6 +156,7 @@ executor.py
   
 日本ではまだアカデミアや企業の研究者が使えるトラッカーが無いように見えるので、いずれ、どなたかが立ち上げる必要がありますね。  
 (トラッカーやピアが見つからない場合、わたしの自宅のパソコンがダウンしている可能性があるので、教えていただけると幸いです)  
+(Torrentの論文や使い方のサイトを見ましたが、どれもムズがしく使い方を間違えている可能性があります)
 
 ```console
 $ {open what your using torrent-client} deep_furigana_vars.torrent
@@ -163,3 +164,4 @@ $ {open what your using torrent-client} deep_furigana_vars.torrent
 
 ## fastTextでchargramを無効にして、分散表現の学習
 [1] [SeqGAN論文](https://arxiv.org/pdf/1609.05473.pdf?)
+[2] [The Bittorrent P2P File-Sharing System: Measurements and Analysis](http://www.csd.uoc.gr/~hy558/papers/bittorrent.pdf)
