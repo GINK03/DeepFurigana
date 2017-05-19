@@ -162,6 +162,6 @@ $ python3 executor.py
 $ {open what your using torrent-client} deep_furigana_vars.torrent
 ```
 
-## fastTextでchargramを無効にして、分散表現の学習
-[1] [SeqGAN論文](https://arxiv.org/pdf/1609.05473.pdf?)  
+## 参考文献
+[1] [SeqGAN論文](https://arxiv.org/pdf/1609.05473.pdf?)  
 [2] [The Bittorrent P2P File-Sharing System: Measurements and Analysis](http://www.csd.uoc.gr/~hy558/papers/bittorrent.pdf)  
