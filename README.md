@@ -1,4 +1,4 @@
-# Deep Furigana
+# Deep Furiganaを機械学習で自動でふる
 
 Deep Furiganaは、日本語の漢字に特殊な読み方を割り当てて、中二心をくすぐるものです。
 特殊な読み方（発音でなく文脈的な表現を表している）とすることが多く、外国人にとって日本語の学習の障害になっているということです。
@@ -84,7 +84,7 @@ fastText( nchargram=disable, dimentions=256, epoch=5 )
 実際にこのプログラムを走らせると、このようになります
 
 ## iterationごとの、なろう確率の変化
-最初はあまりなろうっぽくないもととなる文章ですが、様々な単語選択をすることで、だんだん判別機を騙しに行けるようになってきます。  
+最初はあまりなろうっぽくないもととなる文章ですが、様々な単語選択をすることで、だんだん判別機を騙しに行けるようになってきます  
 これは、実はGANの敵対的学習に影響を受けており、SeqGANの知識を使いまわしています[1]。  
   
 <p align="center">
@@ -174,5 +174,5 @@ $ {open what your using torrent-client} deep_furigana_vars.torrent
 ```
 
 ## 参考文献
-[1] [SeqGAN論文](https://arxiv.org/pdf/1609.05473.pdf?)  
+[1] [SeqGAN論文](https://arxiv.org/pdf/1609.05473.pdf?)  
 [2] [The Bittorrent P2P File-Sharing System: Measurements and Analysis](http://www.csd.uoc.gr/~hy558/papers/bittorrent.pdf)  
