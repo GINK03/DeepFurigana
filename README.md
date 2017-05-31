@@ -8,7 +8,7 @@ Deep Furiganaは、日本語の漢字に特殊な読み方を割り当てて、�
 <p align="center">
   <img width="350px" src="https://cloud.githubusercontent.com/assets/4949982/26139347/e9927c1a-3b0a-11e7-9022-1720ac82ec5a.jpg">
 </p>
-<div align="center"> 図1. Fate Grand Orderのアルテラの場面、生命と文明を（おまえたち）と呼ばせる </div>
+<div align="center"> 図1. Fateシリーズのアルテラの場面、生命と文明を（おまえたち）と呼ばせる </div>
 
 ## つまりどういうことなのか
 Deep Furiganaがある文脈の前後にて、生命と、文明と、おまえたちは、同等の意味を持っていると考えられます。
